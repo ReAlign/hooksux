@@ -1,0 +1,16 @@
+.rts2_cache_cjs
+.rts2_cache_es
+.rts2_cache_umd
+dist
+node_modules
+
+code/rax/src
+code/react/src
+
+example/build
+
+code-ts/rax/src
+code-ts/react/src
+
+.DS_Store
+package-lock.json

@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "jsxFactory": "createElement",
+    "target": "ESNext",
+    "sourceMap": true,
+    "declaration": true,
+    "module": "ESNext",
+    "removeComments": true,
+    "outDir": "lib/",
+    "moduleResolution": "node",
+    "experimentalDecorators": false,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "importHelpers": true,
+    "stripInternal": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017.object"
+    ],
+
+    "typeRoots": [
+      "node_modules/rax-types",
+      "node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "rax": ["node_modules/rax-types"]
+    }
+  },
+  "include": [
+    "rax/**/*",
+    "react/**/*",
+    "src/**/*"
+  ]
+}

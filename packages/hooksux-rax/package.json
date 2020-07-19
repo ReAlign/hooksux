@@ -1,0 +1,39 @@
+{
+  "name": "hooksux-rax.test",
+  "version": "0.0.3",
+  "description": "Simple global store manager for rax react hooks.",
+  "author": "ReAlign <realign@yeah.net> (https://github.com/realign)",
+  "private": false,
+  "sideEffects": false,
+  "main": "dist/hooksux-rax.js",
+  "browser": "dist/hooksux-rax.umd.js",
+  "umd:main": "dist/hooksux-rax.umd.js",
+  "jsnext:main": "dist/hooksux-rax.modern.js",
+  "module": "dist/hooksux-rax.module.js",
+  "syntax": {
+    "esmodules": "dist/hooksux-rax.modern.js"
+  },
+  "types": "dist/rax/src/rax.d.ts",
+  "typings": "dist/rax/src/rax.d.ts",
+  "exports": {
+    ".": {
+      "browser": "dist/hooksux-rax.module.js",
+      "umd": "dist/hooksux-rax.umd.js",
+      "import": "dist/hooksux-rax.module.js",
+      "require": "dist/hooksux-rax.js"
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "rax",
+    "react",
+    "hooks",
+    "react-hooks",
+    "state",
+    "store",
+    "global-store",
+    "global-state",
+    "createContext",
+    "useReducer"
+  ]
+}

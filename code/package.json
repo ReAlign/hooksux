@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "rax-types": "^1.0.1"
+  }
+}

@@ -1,0 +1,12 @@
+.rts2_cache_cjs
+.rts2_cache_es
+.rts2_cache_umd
+example
+node_modules
+src
+src-js
+.babelrc
+.editorconfig
+package-lock.json
+
+.DS_Store

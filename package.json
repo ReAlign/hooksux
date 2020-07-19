@@ -1,0 +1,51 @@
+{
+  "name": "hooksux_react_rax",
+  "version": "1.0.0",
+  "scripts": {
+    "ins:all": "npm run ins:code && npm run ins:rax && npm run ins:react",
+    "ins:code": "cd code && npm i && cd ..",
+    "ins:rax": "cd code/rax && npm i && cd ../..",
+    "ins:react": "cd code/react && npm i && cd ../..",
+    "pkg:rax": "cd code/rax && npm run build",
+    "pkg:react": "cd code/react && npm run build",
+    "pkg": "npm run ins:all && npm run pkg:rax && npm run pkg:react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReAlign/hooksux.git"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/__tests__/setup.js"
+    ],
+    "preset": "ts-jest",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.(test|spec).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ]
+  }
+}
