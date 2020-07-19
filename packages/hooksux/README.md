@@ -181,3 +181,5 @@ export default (state, action) => {
 ```
 
 Then set `Data = { name, reducer: YourReducer, initState, }`.
+
+## Releases
