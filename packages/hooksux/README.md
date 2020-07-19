@@ -11,6 +11,10 @@
 npm install hooksux -S
 ```
 
+## Notes
+
+It's implementation principle is [useContext-useReducer-hooks][path-of-useContext-useReducer-hooks].
+
 ## API
 
 ### initStore
@@ -183,3 +187,5 @@ export default (state, action) => {
 Then set `Data = { name, reducer: YourReducer, initState, }`.
 
 ## Releases
+
+[path-of-useContext-useReducer-hooks]:https://github.com/ReAlign/hooksux/tree/master/docs/useContext-useReducer-hooks.md
