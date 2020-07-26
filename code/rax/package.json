@@ -23,8 +23,9 @@
     "rmdist": "rimraf ../../packages/hooksux-rax/dist/",
     "remove-src": "node folder-remove.js",
     "copy-src": "node folder-copy.js",
-    "build:uncompressed": "microbundle --jsx createElement --external react --no-compress --name hooksux-rax --output ../../packages/hooksux-rax/dist/",
-    "build": "npm run rmdist && npm run remove-src && npm run copy-src && npm run build:uncompressed"
+    "build:uncompressed": "microbundle --jsx createElement --external react --no-sourcemap --no-compress --name hooksux-rax --output ../../packages/hooksux-rax/dist/",
+    "thin-d.ts": "node thin-d.ts.js",
+    "build": "npm run rmdist && npm run remove-src && npm run copy-src && npm run build:uncompressed && npm run thin-d.ts"
   },
   "peerDependencies": {
     "rax": "^1.1.3",

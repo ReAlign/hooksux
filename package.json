@@ -8,7 +8,10 @@
     "ins:react": "cd code/react && npm i && cd ../..",
     "pkg:rax": "cd code/rax && npm run build",
     "pkg:react": "cd code/react && npm run build",
-    "pkg": "npm run ins:all && npm run pkg:rax && npm run pkg:react"
+    "pkg": "npm run ins:all && npm run pkg:rax && npm run pkg:react",
+    "pub:rax": "cd packages/hooksux-rax && npm publish",
+    "pub:react": "cd packages/hooksux && npm publish",
+    "pub": "npm run pub:rax && npm run pub:react"
   },
   "repository": {
     "type": "git",

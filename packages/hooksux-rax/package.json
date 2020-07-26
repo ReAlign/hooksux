@@ -1,6 +1,6 @@
 {
-  "name": "hooksux-rax.test",
-  "version": "0.0.3",
+  "name": "hooksux-rax",
+  "version": "0.0.1-alpha.3",
   "description": "Simple global store manager for rax react hooks.",
   "author": "ReAlign <realign@yeah.net> (https://github.com/realign)",
   "private": false,
@@ -13,8 +13,8 @@
   "syntax": {
     "esmodules": "dist/hooksux-rax.modern.js"
   },
-  "types": "dist/rax/src/rax.d.ts",
-  "typings": "dist/rax/src/rax.d.ts",
+  "types": "dist/rax.d.ts",
+  "typings": "dist/rax.d.ts",
   "exports": {
     ".": {
       "browser": "dist/hooksux-rax.module.js",
