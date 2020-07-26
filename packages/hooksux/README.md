@@ -45,7 +45,7 @@ Origin state, default is `{}`.
 
 | Key       | Required | Default      | Note      |
 |-----------|----------|--------------|-----------|
-| cover     | No       | false        | Cover exist store when initStore. Common scene is spa-route-switch |
+| cover     | No       | false        | Cover existing store when call `initStore`. Common scene is spa-route-switch |
 
 ### getContext
 
@@ -99,7 +99,7 @@ export default () => {
 };
 ```
 
-### Data.js
+### data.js
 
 ```js
 export default {
@@ -133,6 +133,8 @@ export default () => {
         },
       }
     });
+    // `payload` can be array.
+    // When it's array, `dispatch` will call `type` in turn for array's item.
   };
   return (
     <div className="Child">
@@ -187,5 +189,11 @@ export default (state, action) => {
 Then set `Data = { name, reducer: YourReducer, initState, }`.
 
 ## Releases
+
+### 0.1.x
+
+#### 0.1.0
+
+* publish first `Full Version`
 
 [path-of-useContext-useReducer-hooks]:https://github.com/ReAlign/hooksux/tree/master/docs/useContext-useReducer-hooks.md

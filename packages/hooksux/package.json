@@ -1,6 +1,6 @@
 {
   "name": "hooksux",
-  "version": "0.0.1-alpha.3",
+  "version": "0.1.0",
   "description": "Simple global store manager for react hooks.",
   "author": "ReAlign <realign@yeah.net> (https://github.com/realign)",
   "private": false,
