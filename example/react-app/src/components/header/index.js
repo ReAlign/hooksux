@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import logo from './logo.svg';
 import './index.css';
 
-import { getContext } from 'hooksux-test';
+import { getContext } from 'hooksux';
 
 function App() {
     const { state = {}, dispatch } = useContext(getContext().Data);
@@ -10,14 +10,19 @@ function App() {
 
     const xEvt = () => {
         const text = '111';
+        const num = 10;
 
         dispatch({
           type: 'update',
-          payload: {
+          payload: [{
             basic: {
               text,
             },
-          }
+          }, {
+            basic: {
+              num,
+            },
+          }]
         });
       };
 

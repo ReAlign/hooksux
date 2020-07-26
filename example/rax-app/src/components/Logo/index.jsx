@@ -17,11 +17,18 @@ export default () => {
   const clickEvt = () => {
     dispatch({
       type: 'update',
-      payload: {
-        basic: {
-          uri: 'https://img.alicdn.com/tfs/TB18Xm_q5_1gK0jSZFqXXcpaXXa-34-34.svg',
+      payload: [
+        {
+          basic: {
+            uri: 'https://img.alicdn.com/tfs/TB18Xm_q5_1gK0jSZFqXXcpaXXa-34-34.svg',
+          },
         },
-      }
+        {
+          basic: {
+            txt: 'image',
+          },
+        }
+      ]
     });
   };
 
@@ -32,7 +39,7 @@ export default () => {
         source={{uri: basic.uri}}
       />
       <Text onClick={clickEvt}>
-        AAA
+        {basic.txt}
       </Text>
     </View>
   );

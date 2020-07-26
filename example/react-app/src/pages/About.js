@@ -3,7 +3,7 @@ import './About.css';
 
 import Footer from '../components/footer';
 
-import { initStore } from 'hooksux-test';
+import { initStore } from 'hooksux';
 import DAbout from './about.reducer';
 
 export default () => {

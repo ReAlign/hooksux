@@ -7,6 +7,7 @@
     "lint": "eslint --ext .js --ext .jsx ./"
   },
   "dependencies": {
+    "hooksux-rax": "0.0.1-alpha.3",
     "rax": "^1.1.0",
     "rax-app": "^2.0.0",
     "rax-document": "^0.1.0",

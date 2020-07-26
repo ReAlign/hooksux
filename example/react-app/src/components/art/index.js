@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './index.css';
-import { getContext } from 'hooksux-test';
+import { getContext } from 'hooksux';
 
 export default () => {
   const { state = {} } = useContext(getContext().Data);
@@ -9,8 +9,8 @@ export default () => {
   };
   return (
     <div className="m-art">
-      <p>ART - {state.basic.text}</p>
-      <button onClick={xx}>show text</button>
+      <p>ART - {state.basic.text} - {state.basic.num}</p>
+      <button onClick={xx}>show Data</button>
     </div>
   );
 };

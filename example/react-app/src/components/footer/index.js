@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import './index.css';
 
-import { getContext } from 'hooksux-test';
+import { getContext } from 'hooksux';
 
 export default () => {
     const { state = {}, dispatch } = useContext(getContext().DAbout);

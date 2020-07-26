@@ -2,7 +2,8 @@ export default {
   name: 'DAbout',
   initState: {
     basic: {
-        uri: ''
+        uri: '',
+        txt: ''
     },
   },
 };

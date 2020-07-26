@@ -2,7 +2,8 @@ export default {
   name: 'Data',
   initState: {
     basic: {
-        text: ''
+      text: '',
+      num: 0
     },
   },
 };
