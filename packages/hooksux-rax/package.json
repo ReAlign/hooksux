@@ -1,6 +1,6 @@
 {
   "name": "hooksux-rax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple global store manager for rax react hooks.",
   "author": "ReAlign <realign@yeah.net> (https://github.com/realign)",
   "private": false,
